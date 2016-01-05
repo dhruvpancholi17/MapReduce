@@ -33,7 +33,7 @@ public class OriginalProcessUnit {
                         Reporter reporter) throws IOException {
             String line = value.toString();
             String lastToken = null;
-            StringTokenizer s = new StringTokenizer(line, "\t");
+            StringTokenizer s = new StringTokenizer(line, " ");
             String year = s.nextToken();
 
             while (s.hasMoreTokens()) {
@@ -96,8 +96,8 @@ public class OriginalProcessUnit {
         FileInputFormat.setInputPaths(conf, new Path(args[0]));
         FileOutputFormat.setOutputPath(conf, new Path(args[1]));
 
-        FileOutputFormat.setCompressOutput(conf, true);
-        FileOutputFormat.setOutputCompressorClass(conf, GzipCodec.class);
+        FileOutputFormat.setCompressOutput(conf, false);
+        //FileOutputFormat.setOutputCompressorClass(conf, GzipCodec.class);
 
         try {
             JobClient.runJob(conf);
