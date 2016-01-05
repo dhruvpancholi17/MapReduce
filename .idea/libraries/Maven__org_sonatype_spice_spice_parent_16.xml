@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.sonatype.spice:spice-parent:16">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/spice/spice-parent/16/spice-parent-16.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/spice/spice-parent/16/spice-parent-16-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/spice/spice-parent/16/spice-parent-16-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
