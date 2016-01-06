@@ -1,24 +1,19 @@
 import java.util.*;
 
 import java.io.IOException;
-import java.io.IOException;
 
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.conf.*;
 import org.apache.hadoop.io.*;
-import org.apache.hadoop.io.compress.GzipCodec;
 import org.apache.hadoop.mapred.*;
-import org.apache.hadoop.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.impl.Log4jLoggerAdapter;
 
 /**
  * Created by dhruv.pancholi on 05/01/16.
  */
-public class OriginalProcessUnit {
+public class ProcessUnit {
 
-    private static final Logger LOG = LoggerFactory.getLogger(OriginalProcessUnit.class);
+    private static final Logger LOG = LoggerFactory.getLogger(ProcessUnit.class);
 
     //Mapper class
     public static class E_EMapper extends MapReduceBase implements
@@ -77,7 +72,7 @@ public class OriginalProcessUnit {
             System.out.println("Argument:"+i+" "+args[i]);
         }
 
-        JobConf conf = new JobConf(OriginalProcessUnit.class);
+        JobConf conf = new JobConf(ProcessUnit.class);
 
         /*conf.set("mapred.compress.map.output", "true");
         conf.set("mapred.output.compression.type", "BLOCK");
@@ -105,5 +100,4 @@ public class OriginalProcessUnit {
             e.printStackTrace();
         }
     }
-
 }
