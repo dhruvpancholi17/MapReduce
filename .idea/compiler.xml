@@ -24,9 +24,18 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="HadoopHelper" />
-        <module name="MapReduce" />
         <module name="untitled" />
       </profile>
+      <profile default="false" name="Annotation profile for MapReduce" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="MapReduce" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MapReduce" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
