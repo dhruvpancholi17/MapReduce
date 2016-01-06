@@ -124,7 +124,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>OriginalProcessUnit</mainClass>
+                            <mainClass>ProcessUnit</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
