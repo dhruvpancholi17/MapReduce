@@ -66,18 +66,11 @@ public class ProcessUnit {
     //Main function
     public static void main(String[] args) {
 
-        System.out.println("Using GZipCodec Compression");
-
         for(int i =0; i< args.length; i++){
             System.out.println("Argument:"+i+" "+args[i]);
         }
 
         JobConf conf = new JobConf(ProcessUnit.class);
-
-        /*conf.set("mapred.compress.map.output", "true");
-        conf.set("mapred.output.compression.type", "BLOCK");
-        conf.set("mapred.map.output.compression.codec", "org.apache.hadoop.io.compress.GzipCodec");*/
-
 
         conf.setJobName("max_eletricityunits");
         conf.setOutputKeyClass(Text.class);

@@ -124,7 +124,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>Part2.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
